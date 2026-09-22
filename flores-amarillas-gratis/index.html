@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffdf7">
+  <title>Flores Amarillas para Ti 💛</title>
+  <meta name="description" content="Un pequeño ramo de flores amarillas y unas palabras de cariño para alguien especial. Plantilla gratuita de unDetalleDev.">
+  <meta property="og:title" content="Flores Amarillas para Ti 💛">
+  <meta property="og:description" content="Alguien tiene un pequeño detalle para ti. Abre y recibe tus flores amarillas.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <link rel="icon" href="assets/icons/flower.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main class="experience">
+    <section class="intro" aria-labelledby="recipient">
+      <svg class="intro-sprig" viewBox="0 0 100 130" fill="none" aria-hidden="true"><path d="M48 114Q59 72 48 38M52 88Q26 85 28 64Q51 66 52 88M53 75Q79 72 76 53Q56 53 53 75" stroke="#6f8257" stroke-width="1.7"/><g fill="#f4cf55"><ellipse cx="48" cy="26" rx="8" ry="16"/><ellipse cx="48" cy="26" rx="8" ry="16" transform="rotate(60 48 38)"/><ellipse cx="48" cy="26" rx="8" ry="16" transform="rotate(120 48 38)"/><ellipse cx="48" cy="26" rx="8" ry="16" transform="rotate(180 48 38)"/><ellipse cx="48" cy="26" rx="8" ry="16" transform="rotate(240 48 38)"/><ellipse cx="48" cy="26" rx="8" ry="16" transform="rotate(300 48 38)"/></g><circle cx="48" cy="38" r="7" fill="#bc8532"/></svg>
+      <p class="eyebrow">UN PEQUEÑO DETALLE, SOLO PARA TI</p>
+      <h1 id="recipient">Para ti</h1>
+      <p class="intro-text" id="intro-text"></p>
+      <button class="receive" id="receive" type="button"><span id="button-text">Recibir mis flores</span><span aria-hidden="true">↗</span></button>
+      <span class="intro-note" aria-hidden="true">hecho de flores y un poquito de cariño</span>
+    </section>
+
+    <section class="gift" id="gift" aria-labelledby="message-title" hidden>
+      <p class="eyebrow gift-label">PARA TI, CON CARIÑO</p>
+      <div class="bouquet-wrap">
+        <svg id="bouquet" class="bouquet" viewBox="0 0 460 440" role="group" aria-label="Ramo de siete flores amarillas interactivas">
+          <defs>
+            <linearGradient id="petal" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#ffe997"/><stop offset=".6" stop-color="#f6d34f"/><stop offset="1" stop-color="#e8b82e"/></linearGradient>
+            <linearGradient id="leaf" x2="1" y2=".5"><stop stop-color="#80966b"/><stop offset="1" stop-color="#476b40"/></linearGradient>
+            <radialGradient id="center"><stop stop-color="#a27328"/><stop offset=".7" stop-color="#bd8a2d"/><stop offset="1" stop-color="#d6a63a"/></radialGradient>
+          </defs>
+          <ellipse cx="235" cy="416" rx="68" ry="7" fill="#786444" opacity=".055"/>
+          <g id="stems" class="stems" fill="none" stroke-linecap="round"></g>
+          <g class="leaves" fill="url(#leaf)">
+            <path d="M211 322C166 322 140 292 140 263C174 262 211 289 211 322Z"/>
+            <path d="M237 298C242 266 271 241 302 247C296 278 270 298 237 298Z"/>
+            <path d="M191 266C159 260 145 235 154 212C181 218 193 241 191 266Z"/>
+            <path d="M260 259C273 228 298 217 322 223C313 248 289 263 260 259Z"/>
+            <path d="M220 236C194 223 188 198 194 180C217 189 228 212 220 236Z"/>
+            <path d="M269 314C302 315 330 292 331 269C302 271 278 289 269 314Z"/>
+            <g stroke="#d4dcad" stroke-width=".9" fill="none" opacity=".5"><path d="M211 322L151 276M237 298L289 256M191 266L161 224M260 259L310 232M220 236L200 192M269 314L321 279"/></g>
+          </g>
+          <g id="flowers"></g>
+          <g class="ribbon" fill="none" stroke="#c9ae80" stroke-width="3" stroke-linecap="round">
+            <path d="M218 356Q238 364 253 354M235 359C206 331 191 353 211 362Q224 366 235 359C258 336 279 351 260 361Q249 365 235 359M233 362Q220 384 204 390M239 363Q241 383 255 392"/>
+          </g>
+        </svg>
+      </div>
+      <div class="message">
+        <h2 id="message-title" tabindex="-1"></h2>
+        <p id="dedication" class="dedication"></p>
+        <p id="signature" class="signature"></p>
+      </div>
+      <p id="hint" class="hint"></p>
+    </section>
+    <noscript>Activa JavaScript en tu navegador para recibir este pequeño ramo de flores.</noscript>
+  </main>
+  <!-- Crédito de la plantilla: puedes editarlo o quitarlo aquí. -->
+  <footer>Plantilla gratuita por <span>unDetalleDev</span></footer>
+  <div id="particles" class="particles" aria-hidden="true"></div>
+</body>
+</html>
